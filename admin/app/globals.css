@@ -1,0 +1,267 @@
+:root {
+  --font-Khula: "Khula", sans-serif;
+  --font-Nunito: "Nunito", sans-serif;
+  --containerPadding: 0 9.765625vw;
+  --containerMarginTop: 9.765625vw;
+  --backgroundContainerPadding: 6.510416666666667vw 9.765625vw;
+  --mobileContainerMarginTop: 16vw;
+  --mobileContainerPadding: 0 6.4vw;
+  --mobileBackgroundContainerPadding: 10.666666666666668vw 6.4vw;
+  --secondaryBackground:#181818;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  scrollbar-width: none; 
+  -ms-overflow-style: none;
+  scrollbar-width: thin; 
+  scrollbar-color: transparent transparent;
+  overflow-x: hidden;
+  background-color: #fff;
+  padding: 0 9.920634920634921vw;
+}
+
+body::-webkit-scrollbar {
+  width: 0rem; 
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: transparent; 
+}
+
+
+/* Header Start */
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.header-fixed{
+  height: 5.291005291005291vw;
+  display: flex;
+  padding: var(--containerPadding);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2.6455026455026456vw;
+}
+
+.header-limiter{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.headerList{
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: 1.984126984126984vw;
+}
+
+/* Header End */
+
+.dashboard {
+  display: flex;
+  gap: 2vw;
+  align-items: flex-start;
+}
+
+.bikeImage {
+  object-fit: contain;
+}
+
+.container {
+  padding: 2.2vw 1.8vw;
+  height: 48.92592592592593vw;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  gap: .4vw;
+}
+
+.section1 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.8vw;
+  border: 0.1984126984126984vw solid rgb(229 229 229);
+  padding: 1.984126984126984vw;
+  border-radius: 0.5291005291005291vw;
+}
+
+.section2 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.8vw;
+  border: 0.1984126984126984vw solid rgb(229 229 229);
+  padding: 1.984126984126984vw;
+  border-radius: 0.5291005291005291vw;
+}
+
+.section3 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.8vw;
+  padding: 1.984126984126984vw;
+  border: 0.1984126984126984vw solid rgb(229 229 229);
+  border-radius: 0.5291005291005291vw;
+}
+
+.section3 input {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+  background-color: rgb(255, 255, 255);
+  height: 4.298941798941799vw;
+  margin-top: 0 !important;
+}
+
+.availabilityStatus {
+  display: flex;
+  gap: 0.4vw;
+  width: 12.566137566137566vw;
+}
+
+.availabilityStatus input {
+  width: auto;
+}
+
+.category{
+  display: flex;
+  flex-direction: column;
+  gap: .2vw;
+}
+
+form {
+  text-align: left;
+}
+
+input,
+textarea,
+select {
+  border: 0;
+  outline: 0;
+  padding: 1.3227513227513228vw;
+  border-radius: 0.5291005291005291vw;
+  display: block;
+  width: auto;
+  font-family: "Merriweather", sans-serif;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  resize: none;
+  width: 12.566137566137566vw;
+  border: 0.1984126984126984vw solid rgb(229 229 229);
+  height: 4.298941798941799vw;
+}
+
+input:focus {
+  box-shadow: 0 0px 2px rgb(97, 151, 50) !important;
+}
+
+#input-submit {
+  color: white;
+  background: #e74c3c;
+  cursor: pointer;
+}
+
+#input-submit:hover {
+  box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
+}
+
+
+.half {
+  float: left;
+  width: 48%;
+  margin-bottom: 1em;
+}
+
+.right {
+  width: 50%;
+}
+
+.left {
+  margin-right: 2%;
+}
+
+.previewImg {
+  width: 7.936507936507936vw;
+  height: 7.936507936507936vw;
+  object-fit: contain;
+}
+
+.submitButton {
+  height: 40px;
+  background: rgba(8, 8, 8, 0.6);
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submitButton:hover{
+  opacity: 0.8;
+  background-color: rgb(185, 185, 185);
+  color: black;
+}
+
+
+.showBikeCards{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2.2vw 1.8vw;
+  width: 80vw;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  gap: 1.3227513227513228vw;
+  overflow-y: scroll;
+  height: 48.92592592592593vw;
+}
+
+.showBikeCards::-webkit-scrollbar {
+  width: 10px; 
+}
+
+.showBikeCards::-webkit-scrollbar-thumb {
+  background-color: #555; 
+  border-radius: 5px; 
+}
+
+.showBikeCards::-webkit-scrollbar-track {
+  background-color: #fff; 
+  border-radius: 5px; 
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1); 
+}
+
+.showBikeCard{
+  /* background-color: #f2f2f2ff; */
+  padding: 0.6613756613756614vw;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 10vw;
+  height: 10vw;
+}
+
+@media (max-width: 480px) {
+  .half {
+    width: 100%;
+    float: none;
+    margin-bottom: 0;
+  }
+}
+
+/* Clearfix */
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
